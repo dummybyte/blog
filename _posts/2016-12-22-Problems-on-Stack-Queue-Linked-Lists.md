@@ -37,8 +37,9 @@ For complete working code go to :
 ### Question
 
 Given a linked list, reverse it.
-**Input:** head of the linked list to be reversed
-**Output:** head of the reverse linked list
+
+* **Input:** head of the linked list to be reversed
+* **Output:** head of the reverse linked list
 
 **Solution:** Following is the algorithm: (3 pointers method)
 
