@@ -27,6 +27,7 @@ This way you will maintain last n elements in the queue.
 Given a sequence of opening and closing braces, find whether the given sequence is a valid sequence or not. e.g. ((())) - valid,  (()()) - valid, ()()(  - invalid
 
 **Solution:** This problem can be solved by using stack. Following is the algorithm:
+
 * Traverse over the string, on encounter with '(' push it to the stack
 * On encounter with ')' pop from the stack
 * After having finished with the traversal, check if the stack is empty or not - if its empty - the given sequence is valid, if not empty - its invalid
