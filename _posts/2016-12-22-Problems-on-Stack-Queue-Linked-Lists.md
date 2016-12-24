@@ -67,14 +67,14 @@ Clone a linked list with next and a random pointer
 To solve this problem, lets see at following steps:
 
 * First of all, we will insert nodes between all the two nodes of the given linked list such that
+
 ```
     newNode->next = oldNode->next;
     oldNode->next = newNode;
 ```
-
 * One node we need to insert either at the beginning or at the end (we will insert at the end)
-
 * Now we need to define the next and the random pointers for the newly inserted nodes
+
 ```
     newNode->next = oldNode->next->next;
     newNode->randomPtr = oldNode->randomPtr->next;
