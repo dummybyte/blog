@@ -32,6 +32,7 @@ Given a sequence of opening and closing braces, find whether the given sequence 
 * On encounter with ')' pop from the stack
 * After having finished with the traversal, check if the stack is empty or not - if its empty - the given sequence is valid, if not empty - its invalid
 For complete working code go to :
+
 [BracketValidationCode](https://github.com/dummybyte/CodeBlog/blob/master/BracketValidation.cpp)
 
 
@@ -52,4 +53,30 @@ Given a linked list, reverse it.
 * We just need to connect current and newHead each time
 
 For the detail working code please see:
+
 [Reverse Linked List](https://github.com/dummybyte/CodeBlog/blob/master/ReverseLinkedList.cpp)
+
+
+### Question
+Clone a linked list with next and a random pointer
+
+* **Input** head of linked list to be cloned
+* **Output** head of the clone linked list
+
+**Solution:** The solution would here be trivial if the given linked list didn't have the random pointer.
+To solve this problem, lets see at following steps:
+* First of all, we will insert nodes between all the two nodes of the given linked list such that
+```
+    newNode->next = oldNode->next;
+    oldNode->next = newNode;
+```
+* One node we need to insert either at the beginning or at the end (we will insert at the end)
+* Now we need to define the next and the random pointers for the newly inserted nodes
+```
+    newNode->next = oldNode->next->next;
+    newNode->randomPtr = oldNode->randomPtr->next;
+```
+* Insert a node at the last node and configure it accordingly
+For the full working code, see the following link:
+
+[Clone Linked List with random ptr](https://github.com/dummybyte/CodeBlog/blob/master/CloneLinkedListRndPtr.cpp)
