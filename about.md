@@ -10,7 +10,7 @@ This blog is an attempt to target the people who find difficult in understanding
 * Greedy and Dynamic Programming algorithm
 * Graph Algorithm
 
-And many other advance data structures.
+And many other advance data structures. If you want any specific problem or specific data structure to be discussed, please mention that in comment section below. 
 
 #### About Me
 Having completed my undergrad from IIT Jodhpur in Computer Science and Engineering, currently I am working as a Software Developer in Amazon, India. I am a competitive programming enthusiast
