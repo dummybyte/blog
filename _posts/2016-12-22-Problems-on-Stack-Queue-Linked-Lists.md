@@ -84,3 +84,17 @@ To solve this problem, lets see at following steps:
 For the full working code, see the following link:
 
 [Clone Linked List with random ptr](https://github.com/dummybyte/CodeBlog/blob/master/CloneLinkedListRndPtr.cpp)
+
+
+### Question
+Detect whether a loop is present in linked list or not
+
+* **Input** head of the linked list
+* **Output** yes/no if a loop is present in the linked list
+
+**Solution** The underlying idea which we will use here is that - Consider a circular track in where two atheletes are running. Now, consider both the athletes are running at different speeds i.e. one is faster than the other. Notice one thing- faster runner will cross the slower one at some point.
+This idea we will use here to detect a loop in the linked list. Consider two pointers moving in the linked list and one is moving at twice the speed of the other. So once they get into loop(if the loop exist) they will certainly meet at some point and if they don't meet it means that there is no loop in the linked list.
+
+[Detect Loop in Linked List](https://github.com/dummybyte/CodeBlog/blob/master/LoopInLinkedList.cpp)
+
+**BrainStorm** Will the above logic work if the other pointer speed is 3x,4x... times the first one?
