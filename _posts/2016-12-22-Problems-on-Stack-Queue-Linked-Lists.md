@@ -7,22 +7,16 @@ tags: [algorithm, stack, queues, linked list, data structures, problems]
 comments: true
 share: true
 ---
-### Question
+# Contents
 
-There is a stream of numbers. At any instant you need to output last n numbers which appeared in the stream.
-
-Think about it before looking at the solution.
-
-**Solution:** Maintain a queue of size n, and as the numbers keep on coming, keeping on pushing them to queue until queue is full. Now as the queue is full, the queue will have n elements.
-
-Now as the numbers keep on coming, keep popping elements from the front end and pushing the new element from the rear end. Its like a pipe which has capacity of n elements.
-
-This way you will maintain last n elements in the queue.
+- [Braces Validation](#braces-validation)
+- [Reverse Linked List](#reverse-linked-list)
+- [Clone Linked List](#clone-linked-list)
+- [Detect loop in Linked List](#detect-loop-in-linked-list)
+- [Adhoc Problem 1](#adhoc-problem-1)
 
 
-
-
-### Question
+### Braces Validation
 
 Given a sequence of opening and closing braces, find whether the given sequence is a valid sequence or not. e.g. ((())) - valid,  (()()) - valid, ()()(  - invalid
 
@@ -36,7 +30,7 @@ For complete working code go to :
 [BracketValidationCode](https://github.com/dummybyte/CodeBlog/blob/master/BracketValidation.cpp)
 
 
-### Question
+### Reverse Linked List
 
 Given a linked list, reverse it.
 
@@ -57,7 +51,7 @@ For the detail working code please see:
 [Reverse Linked List](https://github.com/dummybyte/CodeBlog/blob/master/ReverseLinkedList.cpp)
 
 
-### Question
+### Clone Linked List
 Clone a linked list with next and a random pointer
 
 * **Input** head of linked list to be cloned
@@ -86,7 +80,7 @@ For the full working code, see the following link:
 [Clone Linked List with random ptr](https://github.com/dummybyte/CodeBlog/blob/master/CloneLinkedListRndPtr.cpp)
 
 
-### Question
+### Detect loop in Linked List
 Detect whether a loop is present in linked list or not
 
 * **Input** head of the linked list
@@ -98,3 +92,16 @@ This idea we will use here to detect a loop in the linked list. Consider two poi
 [Detect Loop in Linked List](https://github.com/dummybyte/CodeBlog/blob/master/LoopInLinkedList.cpp)
 
 **BrainStorm** Will the above logic work if the other pointer speed is 3x,4x... times the first one?
+
+
+### Adhoc Problem 1
+
+There is a stream of numbers. At any instant you need to output last n numbers which appeared in the stream.
+
+Think about it before looking at the solution.
+
+**Solution:** Maintain a queue of size n, and as the numbers keep on coming, keeping on pushing them to queue until queue is full. Now as the queue is full, the queue will have n elements.
+
+Now as the numbers keep on coming, keep popping elements from the front end and pushing the new element from the rear end. Its like a pipe which has capacity of n elements.
+
+This way you will maintain last n elements in the queue.
