@@ -7,8 +7,12 @@ tags: [algorithm, stack, queues, linked list, data structures]
 comments: true
 share: true
 ---
+## Contents
+- [Stack](#stack)
+- [Queue](#queue)
+- [Linked List](#linked-lists)
 
-# Stack
+## Stack
 
 Stack is data structure which follows **LIFO** (Last in first out) property. Stack supports two operations namely:
 
@@ -47,7 +51,7 @@ For arrays, we will have constraint of the size of the stack which will be equal
 If you are implementing by linked list, we need to maintain two pointers one will be head and the other will be top. In case of pop(), just need to change the previous node pointer to null and free the current node. And incase of push(), create a node and point the previous top to current node and update top to current node.
 
 
-# Queue:
+## Queue
 Queue is a data structure which follows **FIFO** (First in First out) property. Lets understand from this example:
 
 Suppose you need to buy a railway ticket counter. You go to a ticket-counter and stand in line(queue). Now the person standing at first gets the ticket first (since he has come first) and the person standing at last gets the ticket at last. Basically who came first gets the ticket first - in the order in which they came, they are served in the same order.
@@ -69,7 +73,7 @@ Here is a Linked List Implementation of Queue:
 [Queue Linked List Implementaion](https://github.com/dummybyte/CodeBlog/blob/master/QueueLinkedListImplementation.cpp)
 
 
-# Linked Lists:
+## Linked Lists
 
 What is the difference between Linked Lists and Arrays? Arrays are linear data structures where similar data is stored at contiguous locations. Linked list are also linear data structures but here data is not stored at contiguous memory locations but here each memory location is linked by pointers.
 
