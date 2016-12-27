@@ -7,7 +7,7 @@ tags: [algorithm, stack, queues, linked list, data structures, problems]
 comments: true
 share: true
 ---
-# Contents
+## Contents
 
 - [Braces Validation](#braces-validation)
 - [Reverse Linked List](#reverse-linked-list)
