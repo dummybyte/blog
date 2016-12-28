@@ -14,6 +14,7 @@ share: true
 - [Clone Linked List](#clone-linked-list)
 - [Detect loop in Linked List](#detect-loop-in-linked-list)
 - [Stack implementation using Queues](#stack-implementation-using-queues)
+- [Queue implementation using Stacks](#queue-implementation-using-stacks)
 - [Adhoc Problem 1](#adhoc-problem-1)
 
 
@@ -111,6 +112,24 @@ The above five steps are needed to be done, for each pop operation. Notice one t
 Following is the C++ code for the above(here I will be using STL Queues):
 
 [Stack implementation using Queues](https://github.com/dummybyte/CodeBlog/blob/master/StackImplementationUsingQueues.cpp)
+
+### Queue implementation using Stacks
+
+Implement Queue using Stack/s
+
+**Solution:** Queue follows FIFO property. So we will try to achieve FIFO by the use of two stacks. Lets call the stacks as S1 and S2. Now when a ```push()``` happens we will insert the element into S1 and whenever a ```pop()``` operation happens, then we will follow the following steps:
+
+- keep on popping from S1 and push the corresponding element to S2
+- keep on doing above till S1 is empty
+- Now our target element is the top element of S2, so ```pop()``` it
+- keep on popping from S2 and push the corresponding element to S1
+- keep on doing the 4th step till S2 is empty
+
+So what we are doing above?
+
+We are just using the S2 as a supportive stack to preserve the order of elements present in S1. Click on the link below to see the full working code:
+
+[Queue implementation using Stacks](https://github.com/dummybyte/CodeBlog/blob/master/QueueImplementationUsingStack.cpp)
 
 ### Adhoc Problem 1
 
