@@ -13,6 +13,7 @@ share: true
 - [Reverse Linked List](#reverse-linked-list)
 - [Clone Linked List](#clone-linked-list)
 - [Detect loop in Linked List](#detect-loop-in-linked-list)
+- [Stack implementation using Queues](#stack-implementation-using-queues)
 - [Adhoc Problem 1](#adhoc-problem-1)
 
 
@@ -93,6 +94,22 @@ This idea we will use here to detect a loop in the linked list. Consider two poi
 
 **BrainStorm** Will the above logic work if the other pointer speed is 3x,4x... times the first one?
 
+### Stack implementation using Queues
+
+Implement Stack using Queues
+
+**Solution:** We know that Stack follows LIFO property. Now our target is to implement ```push()``` and ```pop()``` using Queues. We will be doing this by using two Queues. Lets call the queues as Q1 and Q2. Now say an ```push()``` request comes, then we will push that element to Q1 i.e. keep on pushing the elements to Q1 as long as ```push()``` requests are coming. Now lets say a ```pop()``` query comes, then follow the following steps:
+- keep on popping from the Q1 and pushing the popped element to Q2
+- while popping check if Q1 is empty, if its empty, the last popped element is our output
+- keep on doing that till Q1 is empty
+- Now again keeping on popping from Q2 and pushing it to Q1
+- Keep on doing that as long as Q2 is not empty
+
+The above five steps are needed to be done, for each pop operation. Notice one thing here: we are using Q2 as supporting Queue (just to store popped elements from Q1). The last two steps are just to transfer elements from Q2 to Q1.
+
+Following is the C++ code for the above(here I will be using STL Queues):
+
+[Stack implementation using Queues](https://github.com/dummybyte/CodeBlog/blob/master/StackImplementationUsingQueues.cpp)
 
 ### Adhoc Problem 1
 
