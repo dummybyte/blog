@@ -99,6 +99,7 @@ This idea we will use here to detect a loop in the linked list. Consider two poi
 Implement Stack using Queues
 
 **Solution:** We know that Stack follows LIFO property. Now our target is to implement ```push()``` and ```pop()``` using Queues. We will be doing this by using two Queues. Lets call the queues as Q1 and Q2. Now say an ```push()``` request comes, then we will push that element to Q1 i.e. keep on pushing the elements to Q1 as long as ```push()``` requests are coming. Now lets say a ```pop()``` query comes, then follow the following steps:
+
 - keep on popping from the Q1 and pushing the popped element to Q2
 - while popping check if Q1 is empty, if its empty, the last popped element is our output
 - keep on doing that till Q1 is empty
