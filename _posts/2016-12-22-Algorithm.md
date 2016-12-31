@@ -3,14 +3,13 @@ layout: post
 title: "Stack, Queues and Linked Lists"
 description: "Introduction"
 date: 2016-12-22
-tags: [algorithm, stack, queues, linked list, data structures]
+tags: [algorithm, stack, queues, data structures]
 comments: true
 share: true
 ---
 ## Contents
 - [Stack](#stack)
 - [Queue](#queue)
-- [Linked List](#linked-lists)
 
 ## Stack
 
@@ -71,12 +70,3 @@ Note: There are many ways by which you can implement Queue e.g. using Linked Lis
 
 Here is a Linked List Implementation of Queue:
 [Queue Linked List Implementaion](https://github.com/dummybyte/CodeBlog/blob/master/QueueLinkedListImplementation.cpp)
-
-
-## Linked Lists
-
-What is the difference between Linked Lists and Arrays? Arrays are linear data structures where similar data is stored at contiguous locations. Linked list are also linear data structures but here data is not stored at contiguous memory locations but here each memory location is linked by pointers.
-
-Linked lists support operations such as insertion, deletion, search operations. We will see by code how to implement Linked list in C++:
-
-[Linked List Code](https://github.com/dummybyte/CodeBlog/blob/master/LinkedList.cpp)
