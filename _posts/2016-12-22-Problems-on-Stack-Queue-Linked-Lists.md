@@ -2,7 +2,7 @@
 layout: post
 title: "Problems on Stack, Queues and Linked Lists"
 description: "Problems"
-date: 2016-12-22
+date: 2016-12-23
 tags: [algorithm, stack, queues, linked list, data structures, problems]
 comments: true
 share: true
