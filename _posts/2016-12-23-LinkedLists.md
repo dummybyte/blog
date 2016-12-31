@@ -19,6 +19,7 @@ What is the difference between Linked Lists and Arrays? Arrays are linear data s
 Linked list can be traversed like arrays to access each element stored at memory locations. So for traversing linked lists ,we need the starting pointer of the linked list also known as head of the linked list. **head** is the starting point of a linked list. So for traversing head must be known.
 
 Notation to denote a Linked List
+
 ```
 struct node {
     int data;
@@ -34,6 +35,7 @@ Consider the following example of linked list:
 Here we can see that each node points to the next node (basically each node knows the memory address of the next node). The last node is pointed to ```null``` since the list ends there.
 
 Now how to traverse the linked list. As discussed above, we need head of the linked list and since each node, from head onwards, knows the address of the next node we can just jump to next address till we reach the end of the linked list. Here is the code snippet on how to traverse the linked list:
+
 ```
     traverse(struct node *head) {
         while(head != NULL) {

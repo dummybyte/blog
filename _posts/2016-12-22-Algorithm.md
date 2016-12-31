@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Stack, Queues and Linked Lists"
+title: "Stack & Queues"
 description: "Introduction"
 date: 2016-12-22
 tags: [algorithm, stack, queues, data structures]
