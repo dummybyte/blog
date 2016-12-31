@@ -10,7 +10,8 @@ share: true
 
 ## Contents
 - [Linked Lists](#linked-lists)
-
+- [Doubly Linked List](#doubly-linked-list)
+- [Circular Linked List](#circular-linked-list)
 
 ## Linked Lists
 
@@ -54,3 +55,30 @@ They are just random 5 locations. They need to be connected so that it can becom
 Linked lists support operations such as insertion, deletion, search operations also. We will see by code how to implement Linked list in C++:
 
 [Linked List Code](https://github.com/dummybyte/CodeBlog/blob/master/LinkedList.cpp)
+
+
+Now there are various types of linked list. Though we will not discuss them in detail, but we will give a brief idea of what is there structure.
+
+## Doubly Linked List
+
+Doubly linked list is nothing but a linked list which also points to the previous node. Here is how doubly linked list structure looks like:
+
+```
+    struct node {
+        int data;
+        struct node *previous;
+        struct node *next;
+    }
+```
+
+Here how the doubly linked list would look like:
+
+![image](/blog/images/linkedlist_2.jpg)
+
+## Circular Linked List
+
+Circular linked list is a linked list where the last pointer doesn't point to the ```NULL``` rather it points to the head of the linked list.
+
+Here is how the Circular linked list would look like:
+
+![image](/blog/images/linkedlist_3.jpg)
